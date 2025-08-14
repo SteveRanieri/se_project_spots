@@ -1,0 +1,34 @@
+.profile {
+  display: flex;
+  padding: 34px 0 20px;
+}
+
+.profile__avatar {
+  margin-right: 20px;
+}
+
+.profile__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__name {
+  margin: 0;
+}
+
+.profile__paragraph {
+  margin: 12px 0 0;
+}
+
+.profile__edit-button {
+  margin-top: auto;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  color: #21212166;
+}
+
+.profile__post-button {
+  margin-left: auto;
+  padding: 0;
+}
