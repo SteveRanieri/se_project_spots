@@ -5,9 +5,4 @@
 @import url(../blocks/profile.css);
 @import url(../blocks/content.css);
 @import url(../blocks/cards.css);
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+@import url(../blocks/footer.css);
