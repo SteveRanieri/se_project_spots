@@ -8,6 +8,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 413px);
+  justify-content: center;
   padding: 0;
   margin: 0;
   gap: 40px 20px;
@@ -28,13 +29,15 @@
 .card__content {
   display: flex;
   justify-content: space-between;
-
   margin: 12px 0 0;
 }
 
 .card__title {
   margin: 0;
+
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .card__like {
@@ -51,7 +54,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 627px) {
+@media screen and (max-width: 630px) {
   .cards__list {
     display: flex;
     flex-direction: column;
