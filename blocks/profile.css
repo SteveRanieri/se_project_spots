@@ -3,6 +3,7 @@
   padding: 34px 0 20px;
   border-bottom: #212121b3 solid 1px;
   position: relative;
+  font-weight: 500;
 }
 
 .profile__avatar {
@@ -16,12 +17,11 @@
   display: flex;
   flex-direction: column;
   max-width: 420px;
-  font-weight: 500;
 }
 
 .profile__name {
   margin: 0;
-  font-weight: 500;
+
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -31,6 +31,7 @@
 
 .profile__paragraph {
   margin: 12px 0 18px;
+  opacity: 70%;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -52,7 +53,7 @@
   cursor: pointer;
 }
 
-.profile__edit-button_icon {
+.profile__edit-button-icon {
   margin-right: 8px;
   vertical-align: -2px;
 }
@@ -67,7 +68,7 @@
   display: flex;
 }
 
-.profile__post-button_icon {
+.profile__post-button-icon {
   margin: 2px 8px 2px 0;
   height: 12px;
   width: 12px;
