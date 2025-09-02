@@ -14,79 +14,13 @@
   gap: 40px 20px;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  max-width: 413px;
-}
-
-.card__image {
-  aspect-ratio: 1 / 1;
-  max-width: 100%;
-  border-radius: 8px;
-  border: none;
-}
-
-.card__content {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px 0 0;
-}
-
-.card__title {
-  margin: 0;
-  font-weight: 500;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.card__like {
-  background-color: inherit;
-  border: none;
-  padding: 0;
-}
-
-.card__like-icon {
-  opacity: 40%;
-  padding: 0;
-}
-
-.card__like-icon:hover {
-  opacity: 100%;
-  cursor: pointer;
-}
-
 @media screen and (max-width: 630px) {
   .cards__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, 288px);
+    gap: 20px;
   }
 
-  .card {
-    width: 288px;
-  }
-
-  .card__image {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .cards__list {
-    grid-template-columns: 413px 413px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .cards__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 880px) {
-  .cards__list {
-    grid-template-columns: repeat(auto-fit, minmax(288px, 50%));
+  .cards {
+    padding-bottom: 20px;
   }
 }

@@ -5,17 +5,17 @@
 - Intro
 - Figma
 - Images
-- Github
+- Github Deployment
 
 **Intro**
 
-This project is made so all the elements are displayed correctly on popular screen sizes using the technologies:
--Html
--CSS
--Grid
--Flexbox
--Media Queries
--Advanced Selectors and Psuedo-classes
+This project is made so all the elements are displayed correctly on popular screen sizes using the technologies:  
+-Html  
+-CSS  
+-Grid  
+-Flexbox  
+-Media Queries  
+-Class Selectors and Psuedo-classes  
 -Figma
 
 **Figma**
@@ -32,4 +32,5 @@ This project is made so all the elements are displayed correctly on popular scre
 ![Photo by Moritz Feldmann from Pexels](./images/6-photo-by-moritz-feldmann-from-pexels.jpg)
 
 **Github**
-https://github.com/SteveRanieri/se_project_spots.git
+
+- [Deployment Link](https://steveranieri.github.io/se_project_spots/)
