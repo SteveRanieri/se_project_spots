@@ -15,7 +15,7 @@ This project is made so all the elements are displayed correctly on popular scre
 -Grid  
 -Flexbox  
 -Media Queries  
--Class Selectors and Psuedo-classes  
+-Advanced Selectors and Psuedo-classes  
 -Figma
 
 **Figma**
