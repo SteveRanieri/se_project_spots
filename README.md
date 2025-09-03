@@ -34,3 +34,7 @@ This project is made so all the elements are displayed correctly on popular scre
 **Github**
 
 - [Deployment Link](https://steveranieri.github.io/se_project_spots/)
+
+**Video Desription**
+
+- [Video Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing)
