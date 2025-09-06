@@ -177,7 +177,7 @@
   border: none;
 }
 
-.modal__fieldset_profile {
+.modal__fieldset-profile {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -185,7 +185,7 @@
   border: none;
 }
 
-.modal__fieldset_post {
+.modal__fieldset-post {
   display: flex;
   flex-direction: column;
   padding: 0;
