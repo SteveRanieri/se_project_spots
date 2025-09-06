@@ -1,0 +1,137 @@
+.modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #00000080;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 32px 50px;
+  max-width: 730px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.modal__title {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.modal__form {
+  border: none;
+}
+
+.modal__fieldset_profile {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.modal__fieldset_post {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.modal__label {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  opacity: 80%;
+}
+
+.modal__input {
+  width: calc(100% - 24px -1px);
+  padding: 16px 12px;
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #21212166;
+  border-radius: 8px;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  background-image: url(../images/close-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  opacity: 40%;
+}
+
+.modal__close-button:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.modal__save-button {
+  padding: 18px 32px;
+  width: 156px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.modal__save-button:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+  .modal__container {
+    padding: 12px;
+  }
+
+  .modal__title {
+    margin-top: 12px;
+    margin-bottom: 34px;
+    font-size: 20px;
+  }
+
+  .modal__input {
+    margin-bottom: 24px;
+  }
+
+  .modal__close-button {
+    top: 12px;
+    right: 12px;
+  }
+
+  .modal__save-button {
+    width: 100%;
+  }
+}
