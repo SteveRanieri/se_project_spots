@@ -1,3 +1,4 @@
+//Opening and closing Modals
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const closeProfileModal = editProfileModal.querySelector(
@@ -22,3 +23,18 @@ newPostBtn.addEventListener("click", function () {
 closePostModal.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
+
+//Modal inputs
+const profileName = document.querySelector(".profile__name");
+const profileDescription = document.querySelector(".profile__paragraph");
+const profileNameInput = editProfileModal.querySelector("#profile-name");
+const profileDescriptionInput = editProfileModal.querySelector(
+  "#profile-description"
+);
+
+profileNameInput.value = profileName.textContent;
+profileDescriptionInput.value = profileDescription.textContent;
+
+// const profileFormElement = editProfileModal.querySelector(".modal__form");
+// const nameInput = profileFormElement.querySelector("#profile-name");
+// const jobInput = profileFormElement.querySelector("#profile-description");
