@@ -17,6 +17,7 @@ This project is made so all the elements are displayed correctly on popular scre
 -Media Queries  
 -Advanced Selectors and Psuedo-classes  
 -Figma
+-JavaScript
 
 **Figma**
 
@@ -38,3 +39,4 @@ This project is made so all the elements are displayed correctly on popular scre
 **Video Desription**
 
 - [Video Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing)
+
