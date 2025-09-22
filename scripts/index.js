@@ -24,17 +24,38 @@ closePostModal.addEventListener("click", function () {
   newPostModal.classList.remove("modal_is-opened");
 });
 
-//Modal inputs
+//Modal Profile Edit
 const profileName = document.querySelector(".profile__name");
 const profileDescription = document.querySelector(".profile__paragraph");
-const profileNameInput = editProfileModal.querySelector("#profile-name");
-const profileDescriptionInput = editProfileModal.querySelector(
+const editProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileNameInput = editProfileModal.querySelector("#profile-name");
+const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description"
 );
 
-profileNameInput.value = profileName.textContent;
-profileDescriptionInput.value = profileDescription.textContent;
+editProfileNameInput.value = profileName.textContent;
+editProfileDescriptionInput.value = profileDescription.textContent;
 
-// const profileFormElement = editProfileModal.querySelector(".modal__form");
-// const nameInput = profileFormElement.querySelector("#profile-name");
-// const jobInput = profileFormElement.querySelector("#profile-description");
+function handleProfileFormSubmit(evt) {
+  evt.preventDefault();
+  console.log(editProfileNameInput.value);
+  profileName.textContent = editProfileNameInput.value;
+  profileDescription.textContent = editProfileDescriptionInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
+}
+
+editProfileForm.addEventListener("submit", handleProfileFormSubmit);
+
+// Modal Post Edit
+const editPostForm = newPostModal.querySelector(".modal__form");
+const editPostPhotoLink = newPostModal.querySelector("#post-image");
+const editPostCaptionInput = newPostModal.querySelector("#post-caption");
+
+function handlePostFormSubmit(evt) {
+  evt.preventDefault();
+  console.log(editPostPhotoLink.value);
+  console.log(editPostCaptionInput.value);
+  newPostModal.classList.remove("modal_is-opened");
+}
+
+editPostForm.addEventListener("submit", handlePostFormSubmit);
