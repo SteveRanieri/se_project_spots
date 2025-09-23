@@ -8,20 +8,29 @@ const newPostBtn = document.querySelector(".profile__post-button");
 const newPostModal = document.querySelector("#new-post-modal");
 const closePostModal = newPostModal.querySelector(".modal__close-button");
 
+function openModal(modal) {
+  modal.classList.add("modal_is-opened");
+}
+function closeModal(modal) {
+  modal.classList.remove("modal_is-opened");
+}
+
 editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.add("modal_is-opened");
+  openModal(editProfileModal);
+  editProfileNameInput.value = profileName.textContent;
+  editProfileDescriptionInput.value = profileDescription.textContent;
 });
 
 closeProfileModal.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
+  openModal(newPostModal);
 });
 
 closePostModal.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
 });
 
 //Modal Profile Edit
@@ -32,9 +41,6 @@ const editProfileNameInput = editProfileModal.querySelector("#profile-name");
 const editProfileDescriptionInput = editProfileModal.querySelector(
   "#profile-description"
 );
-
-editProfileNameInput.value = profileName.textContent;
-editProfileDescriptionInput.value = profileDescription.textContent;
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();

@@ -29,11 +29,12 @@
   width: 100%;
   background-color: #fff;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 .modal__title {
   padding: 0;
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   font-size: 32px;
   font-weight: 500;
 }
@@ -42,15 +43,7 @@
   border: none;
 }
 
-.modal__fieldset-profile {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.modal__fieldset-post {
+.modal__fieldset {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -66,7 +59,7 @@
 }
 
 .modal__input {
-  width: calc(100% - 24px -1px);
+  width: 100%;
   padding: 16px 12px;
   margin-bottom: 32px;
   font-size: 20px;
@@ -76,6 +69,7 @@
   border-width: 1px;
   border-color: #21212166;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .modal__close-button {
