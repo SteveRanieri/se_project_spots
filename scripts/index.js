@@ -1,3 +1,19 @@
+//Card image array
+const initialCards = [
+  { name: "Badlands, South Dakota", link: "./images/Badlands-SD.jpg" },
+  { name: "Devil's Tower, Wyoming", link: "./images/Devils-Tower-WY.jpg" },
+  { name: "Grotto Falls, Montana", link: "./images/Grotto-Falls-MT.jpg" },
+  {
+    name: "Hyalite, Montana",
+    link: "./images/Hyalite-MT.jpg",
+  },
+  { name: "Naples, Florida", link: "./images/Naples-FL.jpg" },
+  {
+    name: "Puerto Viejo de Talamanca, Cost Rica",
+    link: "./images/Puerto-Viejo-CR.jpg",
+  },
+];
+
 //Opening and closing Modals
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
@@ -47,7 +63,7 @@ function handleProfileFormSubmit(evt) {
   console.log(editProfileNameInput.value);
   profileName.textContent = editProfileNameInput.value;
   profileDescription.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-opened");
+  closeModal(editProfileModal);
 }
 
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
@@ -61,7 +77,11 @@ function handlePostFormSubmit(evt) {
   evt.preventDefault();
   console.log(editPostPhotoLink.value);
   console.log(editPostCaptionInput.value);
-  newPostModal.classList.remove("modal_is-opened");
+  closeModal(newPostModal);
+  evt.target.reset();
 }
 
 editPostForm.addEventListener("submit", handlePostFormSubmit);
+
+//Card Image Loop
+initialCards.forEach((card) => console.log(card.name));
