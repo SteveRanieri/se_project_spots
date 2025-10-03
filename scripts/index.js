@@ -1,16 +1,16 @@
 //Card image array
 const initialCards = [
-  { name: "Badlands, South Dakota", link: "./images/Badlands-SD.jpg" },
-  { name: "Devil's Tower, Wyoming", link: "./images/Devils-Tower-WY.jpg" },
-  { name: "Grotto Falls, Montana", link: "./images/Grotto-Falls-MT.jpg" },
+  { name: "Badlands, South Dakota", link: "./images/7-Badlands.jpg" },
+  { name: "Devil's Tower, Wyoming", link: "./images/8-Devils-Tower.jpg" },
+  { name: "Grotto Falls, Montana", link: "./images/9-Grotto-Falls-MT.jpg" },
   {
     name: "Hyalite, Montana",
-    link: "./images/Hyalite-MT.jpg",
+    link: "./images/10-Hyalite.jpg",
   },
-  { name: "Naples, Florida", link: "./images/Naples-FL.jpg" },
+  { name: "Naples, Florida", link: "./images/11-Naples-FL.jpg" },
   {
     name: "Puerto Viejo de Talamanca, Cost Rica",
-    link: "./images/Puerto-Viejo-CR.jpg",
+    link: "./images/12-Puerto-Viejo.jpg",
   },
 ];
 
