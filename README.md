@@ -31,12 +31,17 @@ This project is made so all the elements are displayed correctly on popular scre
 ![Photo by Maurice Laschet from Pexels](./images/4-photo-by-maurice-laschet-from-pexels.jpg)
 ![Photo by Van Anh Ngyuen from Pexels](./images/5-photo-by-van-anh-nguyen-from-pexels.jpg)
 ![Photo by Moritz Feldmann from Pexels](./images/6-photo-by-moritz-feldmann-from-pexels.jpg)
+![Photo by Stephen Ranieri ©](./images/7-Badlands.JPG)
+![Photo by Stephen Ranieri ©](./images/8-Devils-Tower.JPG)
+![Photo by Stephen Ranieri ©](./images/9-Grotto-Falls-MT.jpg)
+![Photo by Stephen Ranieri ©](./images/10-Hyalite.JPG)
+![Photo by Stephen Ranieri ©](./images/11-Naples-FL.jpg)
+![Photo by Stephen Ranieri ©](./images/12-Puerto-Viejo.jpg)
 
 **Github**
 
 - [Deployment Link](https://steveranieri.github.io/se_project_spots/)
 
-**Video Desription**
+**Video Description**
 
 - [Video Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing)
-

@@ -124,7 +124,7 @@
   flex-direction: column;
 }
 
-.modal__image_caption {
+.modal__image-caption {
   padding: 4px 8px;
   margin: 8px auto auto 0;
   color: #fff;
@@ -140,7 +140,7 @@
   position: absolute;
   top: 0;
   right: -52.75px;
-  background-image: url(/images/White-delete-icon.svg);
+  background-image: url(../images/White-delete-icon.svg);
   opacity: 100%;
 }
 
@@ -172,7 +172,7 @@
     width: 100%;
   }
 
-  .modal__image_caption {
+  .modal__image-caption {
     font-size: 16px;
   }
 
