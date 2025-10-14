@@ -1,3 +1,4 @@
+//----Variables----
 //Card image array
 const initialCards = [
   { name: "Badlands, South Dakota", link: "./images/7-Badlands.jpg" },
@@ -9,7 +10,7 @@ const initialCards = [
   },
   { name: "Naples, Florida", link: "./images/11-Naples-FL.jpg" },
   {
-    name: "Puerto Viejo de Talamanca, Cost Rica",
+    name: "Puerto Viejo de Talamanca, Costa Rica",
     link: "./images/12-Puerto-Viejo.jpg",
   },
 ];
@@ -18,6 +19,38 @@ const initialCards = [
 const cardsList = document.querySelector(".cards__list");
 const cardTemplate = document.querySelector("#card-template");
 
+//Profile Modal
+const editProfileBtn = document.querySelector(".profile__edit-button");
+const editProfileModal = document.querySelector("#edit-profile-modal");
+const closeProfileModal = editProfileModal.querySelector(
+  ".modal__close-button"
+);
+
+//Profile Modal Edit
+const profileName = document.querySelector(".profile__name");
+const profileDescription = document.querySelector(".profile__paragraph");
+const editProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileNameInput = editProfileModal.querySelector("#profile-name");
+const editProfileDescriptionInput = editProfileModal.querySelector(
+  "#profile-description"
+);
+
+//New Post Modal
+const newPostBtn = document.querySelector(".profile__post-button");
+const newPostModal = document.querySelector("#new-post-modal");
+const closePostModal = newPostModal.querySelector(".modal__close-button");
+// New Post Modal Edit
+const editPostForm = newPostModal.querySelector(".modal__form");
+const editPostPhotoLink = newPostModal.querySelector("#post-image");
+const editPostCaptionInput = newPostModal.querySelector("#post-caption");
+
+//Preview Modal
+const previewModal = document.querySelector("#preview-modal");
+const previewModalText = previewModal.querySelector(".modal__image-caption");
+const previewModalImage = previewModal.querySelector(".modal__image");
+const closePreviewModal = previewModal.querySelector(".modal__close-button");
+
+//Cards
 function getCardElement(data) {
   const cardElement = cardTemplate.content.cloneNode(true);
   const cardName = cardElement.querySelector(".card__title");
@@ -37,6 +70,13 @@ function getCardElement(data) {
     cardDeleteButton.closest(".card").remove();
   });
 
+  cardImage.addEventListener("click", function () {
+    previewModalText.textContent = data.name;
+    previewModalImage.src = data.link;
+    previewModalImage.alt = data.name;
+    openModal(previewModal);
+  });
+
   return cardElement;
 }
 
@@ -47,15 +87,6 @@ initialCards.forEach((card) => {
 });
 
 //Opening and closing Modals
-const editProfileBtn = document.querySelector(".profile__edit-button");
-const editProfileModal = document.querySelector("#edit-profile-modal");
-const closeProfileModal = editProfileModal.querySelector(
-  ".modal__close-button"
-);
-const newPostBtn = document.querySelector(".profile__post-button");
-const newPostModal = document.querySelector("#new-post-modal");
-const closePostModal = newPostModal.querySelector(".modal__close-button");
-
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
@@ -81,15 +112,11 @@ closePostModal.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
-//Modal Profile Edit
-const profileName = document.querySelector(".profile__name");
-const profileDescription = document.querySelector(".profile__paragraph");
-const editProfileForm = editProfileModal.querySelector(".modal__form");
-const editProfileNameInput = editProfileModal.querySelector("#profile-name");
-const editProfileDescriptionInput = editProfileModal.querySelector(
-  "#profile-description"
-);
+closePreviewModal.addEventListener("click", function () {
+  closeModal(previewModal);
+});
 
+//Edit Profile
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   console.log(editProfileNameInput.value);
@@ -100,11 +127,7 @@ function handleProfileFormSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
 
-// Modal Post Edit
-const editPostForm = newPostModal.querySelector(".modal__form");
-const editPostPhotoLink = newPostModal.querySelector("#post-image");
-const editPostCaptionInput = newPostModal.querySelector("#post-caption");
-
+//Add Photos
 function handlePostFormSubmit(evt) {
   evt.preventDefault();
 
