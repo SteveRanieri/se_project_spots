@@ -32,6 +32,7 @@
   border-radius: 8px;
   box-sizing: border-box;
 }
+
 .modal__title {
   padding: 0;
   margin-top: 0;
@@ -109,6 +110,44 @@
   cursor: pointer;
 }
 
+.modal__image {
+  border-radius: 8px;
+  max-height: 80vh;
+  max-width: 80vw;
+  width: 100%;
+  object-fit: contain;
+}
+
+.modal__image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__image_caption {
+  padding: 4px 8px;
+  margin: 8px auto auto 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  background-color: #212121;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.modal__preview_close-button {
+  position: absolute;
+  top: 0;
+  right: -52.75px;
+  background-image: url(/images/White-delete-icon.svg);
+  opacity: 100%;
+}
+
+.modal__preview_close-button:hover {
+  opacity: 40%;
+}
+
 @media screen and (max-width: 630px) {
   .modal__container {
     padding: 12px;
@@ -131,5 +170,14 @@
 
   .modal__save-button {
     width: 100%;
+  }
+
+  .modal__image_caption {
+    font-size: 16px;
+  }
+
+  .modal__preview_close-button {
+    right: 0;
+    top: -48px;
   }
 }

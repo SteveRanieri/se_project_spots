@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   max-width: 413px;
+  position: relative;
 }
 
 .card__image {
   aspect-ratio: 1 / 1;
+  object-fit: cover;
   max-width: 100%;
   border-radius: 8px;
   border: none;
@@ -29,7 +31,7 @@
 }
 
 .card__like {
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   padding: 0;
   background-image: url(../images/like-icon.svg);
@@ -42,9 +44,35 @@
   cursor: pointer;
 }
 
+.card__like_liked {
+  background-image: url(../images/card-liked.svg);
+  opacity: 100%;
+}
+
 .card__like:hover {
   opacity: 100%;
-  /* cursor: pointer; */
+}
+
+.card__like_liked:hover {
+  opacity: 50%;
+}
+
+.card__delete {
+  background-image: url(/images/delete-icon.svg);
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.card__delete:hover {
+  background-image: url(/images/delete-icon-hover.png);
 }
 
 @media screen and (max-width: 630px) {

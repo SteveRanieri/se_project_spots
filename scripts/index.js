@@ -14,6 +14,38 @@ const initialCards = [
   },
 ];
 
+//Card functionality
+const cardsList = document.querySelector(".cards__list");
+const cardTemplate = document.querySelector("#card-template");
+
+function getCardElement(data) {
+  const cardElement = cardTemplate.content.cloneNode(true);
+  const cardName = cardElement.querySelector(".card__title");
+  const cardImage = cardElement.querySelector(".card__image");
+  const cardLikeButton = cardElement.querySelector(".card__like");
+  const cardDeleteButton = cardElement.querySelector(".card__delete");
+
+  cardImage.src = data.link;
+  cardImage.alt = data.name;
+  cardName.textContent = data.name;
+
+  cardLikeButton.addEventListener("click", function () {
+    cardLikeButton.classList.toggle("card__like_liked");
+  });
+
+  cardDeleteButton.addEventListener("click", function () {
+    cardDeleteButton.closest(".card").remove();
+  });
+
+  return cardElement;
+}
+
+//Card Image Loop
+initialCards.forEach((card) => {
+  const cardElement = getCardElement(card);
+  cardsList.prepend(cardElement);
+});
+
 //Opening and closing Modals
 const editProfileBtn = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
@@ -75,13 +107,15 @@ const editPostCaptionInput = newPostModal.querySelector("#post-caption");
 
 function handlePostFormSubmit(evt) {
   evt.preventDefault();
-  console.log(editPostPhotoLink.value);
-  console.log(editPostCaptionInput.value);
+
+  const cardElement = getCardElement({
+    name: editPostCaptionInput.value,
+    link: editPostPhotoLink.value,
+  });
+  cardsList.prepend(cardElement);
+
   closeModal(newPostModal);
   evt.target.reset();
 }
 
 editPostForm.addEventListener("submit", handlePostFormSubmit);
-
-//Card Image Loop
-initialCards.forEach((card) => console.log(card.name));
