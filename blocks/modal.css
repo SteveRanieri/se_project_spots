@@ -56,14 +56,15 @@
 .modal__label {
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   opacity: 80%;
+  display: block;
 }
 
 .modal__input {
   width: 100%;
   padding: 16px 12px;
-  margin-bottom: 32px;
+  margin-top: 8px;
   font-size: 20px;
   line-height: 1;
   font-weight: 500;
@@ -72,6 +73,21 @@
   border-color: #21212166;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+.modal__input_error {
+  border-color: #ff000099;
+}
+
+.modal__input_error:focus {
+  border-color: #ff000099;
+}
+
+.modal__error {
+  margin-top: 8px;
+  display: block;
+  color: #ff0000;
+  opacity: 0.7;
 }
 
 .modal__close-button {
@@ -103,6 +119,11 @@
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.modal__save-button_inactive {
+  background-color: 212121;
+  opacity: 0.5;
 }
 
 .modal__save-button:hover {

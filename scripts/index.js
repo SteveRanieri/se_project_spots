@@ -98,6 +98,10 @@ editProfileBtn.addEventListener("click", function () {
   openModal(editProfileModal);
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileDescription.textContent;
+  resetValidation(editProfileForm, [
+    editProfileNameInput,
+    editProfileDescriptionInput,
+  ]);
 });
 
 closeProfileModal.addEventListener("click", function () {
@@ -106,6 +110,7 @@ closeProfileModal.addEventListener("click", function () {
 
 newPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
+  resetValidation(editPostForm, [editPostPhotoLink, editPostCaptionInput]);
 });
 
 closePostModal.addEventListener("click", function () {

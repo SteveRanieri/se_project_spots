@@ -49,7 +49,7 @@
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
-                <img class="card__image" />
+                <img class="card__image" src="#" alt="" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button type="button" class="card__delete"></button>
@@ -68,22 +68,37 @@
           <h2 class="modal__title">Edit Profile</h2>
           <form class="modal__form">
             <fieldset class="modal__fieldset">
-              <label for="profile-name" class="modal__label">Name</label>
-              <input
-                type="text"
-                class="modal__input"
-                id="profile-name"
-                placeholder="Type your name"
-              />
+              <label for="profile-name" class="modal__label">
+                Name
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="profile-name"
+                  placeholder="Type your name"
+                  required
+                  name="name"
+                  minlength="2"
+                  maxlength="48"
+                />
+                <span class="modal__error" id="profile-name-error"></span>
+              </label>
               <label for="profile-description" class="modal__label"
-                >Description</label
-              >
-              <input
-                type="text"
-                class="modal__input"
-                id="profile-description"
-                placeholder="Describe yourself"
-              />
+                >Description
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="profile-description"
+                  placeholder="Describe yourself"
+                  name="description"
+                  minlength="2"
+                  maxlength="200"
+                  required
+                />
+                <span
+                  class="modal__error"
+                  id="profile-description-error"
+                ></span>
+              </label>
             </fieldset>
             <button class="modal__close-button" type="button"></button>
             <button class="modal__save-button" type="submit">Save</button>
@@ -95,20 +110,30 @@
           <h2 class="modal__title">New post</h2>
           <form class="modal__form">
             <fieldset class="modal__fieldset">
-              <label for="post-image" class="modal__label">Image link</label>
-              <input
-                type="text"
-                class="modal__input"
-                id="post-image"
-                placeholder="Paste a link to the picture"
-              />
-              <label for="post-caption" class="modal__label">Caption</label>
-              <input
-                type="text"
-                class="modal__input"
-                id="post-caption"
-                placeholder="Type your caption"
-              />
+              <label for="post-image" class="modal__label"
+                >Image link
+                <input
+                  type="url"
+                  class="modal__input"
+                  id="post-image"
+                  placeholder="Paste a link to the picture"
+                  required
+                />
+                <span class="modal__error" id="post-image-error"></span>
+              </label>
+              <label for="post-caption" class="modal__label"
+                >Caption
+                <input
+                  type="text"
+                  class="modal__input"
+                  id="post-caption"
+                  placeholder="Type your caption"
+                  minlength="2"
+                  maxlength="30"
+                  required
+                />
+                <span class="modal__error" id="post-caption-error"></span>
+              </label>
             </fieldset>
             <button class="modal__close-button" type="button"></button>
             <button class="modal__save-button" type="submit">Save</button>
@@ -128,5 +153,6 @@
     </div>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>
