@@ -10,14 +10,21 @@
 **Intro**
 
 This project is made so all the elements are displayed correctly on popular screen sizes using the technologies:  
--Html  
--CSS  
--Grid  
--Flexbox  
--Media Queries  
--Advanced Selectors and Psuedo-classes  
--Figma
+-Html
+--Forms
+--Templates  
+-CSS
+--Grid  
+--Flexbox  
+--Media Queries  
+--Advanced Selectors and Psuedo-classes  
 -JavaScript
+--Event Handling
+--Template Cloning
+--Array Methods
+--DOM Manipulation
+--Validation
+-Figma
 
 **Figma**
 
