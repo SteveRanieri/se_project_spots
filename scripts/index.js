@@ -89,6 +89,7 @@ initialCards.forEach((card) => {
 //Opening and closing Modals
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  modal.focus();
 }
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
@@ -108,6 +109,12 @@ closeProfileModal.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
+document.addEventListener("keydown", function (evt) {
+  if (evt.key === "Escape") {
+    closeModal(editProfileModal);
+  }
+});
+
 newPostBtn.addEventListener("click", function () {
   openModal(newPostModal);
   resetValidation(editPostForm, [editPostPhotoLink, editPostCaptionInput]);
@@ -117,8 +124,22 @@ closePostModal.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
+document.addEventListener("keydown", function (evt) {
+  if (evt.key === "Escape") {
+    closeModal(newPostModal);
+    console.log(evt);
+  }
+});
+
 closePreviewModal.addEventListener("click", function () {
   closeModal(previewModal);
+});
+
+document.addEventListener("keydown", function (evt) {
+  if (evt.key === "Escape") {
+    closeModal(previewModal);
+    console.log(evt);
+  }
 });
 
 //Edit Profile

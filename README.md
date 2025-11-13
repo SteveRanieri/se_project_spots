@@ -6,6 +6,7 @@
 - Figma
 - Images
 - Github Deployment
+- Project Pitch Videos
 
 **Intro**
 
@@ -49,6 +50,10 @@ This project is made so all the elements are displayed correctly on popular scre
 
 - [Deployment Link](https://steveranieri.github.io/se_project_spots/)
 
-**Video Description**
+**Project Pitch Videos**
+
+Check out these videos, where I describe my project
+and some challenges I faced while building it:
 
 - [Video Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing)
+- [StephenRanieri-ProjectPitch-SpotsStage9]()

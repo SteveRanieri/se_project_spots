@@ -75,12 +75,19 @@
   box-sizing: border-box;
 }
 
+.modal__input:focus {
+  outline: none;
+  border-color: #21212166;
+  border-width: 2px;
+}
+
 .modal__input_error {
   border-color: #ff000099;
 }
 
-.modal__input_error:focus {
+.modal__input.modal__input_error:focus {
   border-color: #ff000099;
+  border-width: 2px;
 }
 
 .modal__error {
@@ -88,6 +95,8 @@
   display: block;
   color: #ff0000;
   opacity: 0.7;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .modal__close-button {
@@ -178,10 +187,6 @@
     margin-top: 12px;
     margin-bottom: 34px;
     font-size: 20px;
-  }
-
-  .modal__input {
-    margin-bottom: 24px;
   }
 
   .modal__close-button {
