@@ -36,7 +36,6 @@ const hasInvalidInput = (inputList) => {
 };
 
 const toggleButtonState = (inputList, buttonElement) => {
-  console.log(hasInvalidInput(inputList));
   if (hasInvalidInput(inputList)) {
     buttonElement.classList.add(settings.inactiveButtonClass);
     buttonElement.disabled = true;
@@ -53,7 +52,6 @@ const resetValidation = (formElement, inputList) => {
 };
 
 const setEventListeners = (formElement) => {
-  console.log(formElement);
   const inputList = Array.from(
     formElement.querySelectorAll(settings.inputSelector)
   );
@@ -75,5 +73,3 @@ const enableValidation = () => {
 };
 
 enableValidation();
-
-enableValidation(settings);

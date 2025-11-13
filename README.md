@@ -56,4 +56,4 @@ Check out these videos, where I describe my project
 and some challenges I faced while building it:
 
 - [Video Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing)
-- [StephenRanieri-ProjectPitch-SpotsStage9]()
+- [StephenRanieri-ProjectPitch-SpotsStage9](https://drive.google.com/file/d/17rVUEx_XcFFhJuzyXWovNSMcXoAQ6GxC/view?usp=sharing)

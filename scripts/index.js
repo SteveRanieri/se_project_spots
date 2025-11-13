@@ -109,6 +109,12 @@ closeProfileModal.addEventListener("click", function () {
   closeModal(editProfileModal);
 });
 
+editProfileModal.addEventListener("click", function (evt) {
+  if (evt.target === editProfileModal) {
+    closeModal(editProfileModal);
+  }
+});
+
 document.addEventListener("keydown", function (evt) {
   if (evt.key === "Escape") {
     closeModal(editProfileModal);
@@ -124,10 +130,15 @@ closePostModal.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
+newPostModal.addEventListener("click", function (evt) {
+  if (evt.target === newPostModal) {
+    closeModal(newPostModal);
+  }
+});
+
 document.addEventListener("keydown", function (evt) {
   if (evt.key === "Escape") {
     closeModal(newPostModal);
-    console.log(evt);
   }
 });
 
@@ -135,17 +146,21 @@ closePreviewModal.addEventListener("click", function () {
   closeModal(previewModal);
 });
 
+previewModal.addEventListener("click", function (evt) {
+  if (evt.target === previewModal) {
+    closeModal(previewModal);
+  }
+});
+
 document.addEventListener("keydown", function (evt) {
   if (evt.key === "Escape") {
     closeModal(previewModal);
-    console.log(evt);
   }
 });
 
 //Edit Profile
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
-  console.log(editProfileNameInput.value);
   profileName.textContent = editProfileNameInput.value;
   profileDescription.textContent = editProfileDescriptionInput.value;
   closeModal(editProfileModal);
