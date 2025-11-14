@@ -57,7 +57,7 @@
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 32px;
-  opacity: 80%;
+  opacity: 0.8;
   display: block;
 }
 
@@ -92,11 +92,15 @@
 
 .modal__error {
   margin-top: 8px;
-  display: block;
+  display: none;
   color: #ff0000;
   opacity: 0.7;
   font-size: 16px;
   font-weight: 500;
+}
+
+.modal__error_visible {
+  display: block;
 }
 
 .modal__close-button {
