@@ -127,9 +127,10 @@
 .modal__save-button {
   padding: 18px 32px;
   width: 156px;
-  background-color: #000000;
+  background-color: #212121;
   color: #fff;
   border-radius: 8px;
+  border: none;
   font-size: 16px;
   font-weight: 500;
 }
@@ -178,7 +179,7 @@
   opacity: 100%;
 }
 
-.modal__preview_close-button:hover {
+.modal__close-button_type_preview:hover {
   opacity: 40%;
 }
 
@@ -206,7 +207,7 @@
     font-size: 16px;
   }
 
-  .modal__preview_close-button {
+  .modal__close-button_type_preview {
     right: 0;
     top: -48px;
   }

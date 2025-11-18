@@ -73,7 +73,7 @@
 }
 
 .card__delete:hover {
-  background-image: url(../images/delete-icon-hover.png);
+  background-image: url(../images/delete-icon-hover.svg);
 }
 
 @media screen and (max-width: 630px) {
