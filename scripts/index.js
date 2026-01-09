@@ -1,3 +1,7 @@
+//Validation Import and call
+import { enableValidation, resetValidation, config } from "./validation.js";
+enableValidation(config);
+
 //----Variables----
 //Card image array
 const initialCards = [
