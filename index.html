@@ -9,23 +9,19 @@
       name="keywords"
       content="Aviator, Coleman, First, African-American, Native, Woman, Pilot"
     />
-
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="icon" href="./favicon.ico" />
     <title>Spots</title>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img
-          src="<%= require('./images/logo.svg') %>"
-          alt="Spots Logo"
-          class="header__logo"
-        />
+        <img src="./images/logo.svg" alt="Spots Logo" class="header__logo" />
       </header>
       <main class="content">
         <section class="profile page__section">
           <img
-            src="<%= require('./images/avatar.jpg') %>"
+            src="./images/avatar.jpg"
             alt="Bessie Coleman"
             class="profile__avatar"
           />
@@ -35,7 +31,7 @@
 
             <button type="button" class="profile__edit-button">
               <img
-                src="<%= require('./images/pencil-icon.svg') %>"
+                src="./images/pencil-icon.svg"
                 alt="Pencil Icon"
                 class="profile__edit-button-icon"
               />Edit Profile
@@ -43,7 +39,7 @@
           </div>
           <button type="button" class="profile__post-button">
             <img
-              src="<%= require('./images/plus-icon.svg') %>"
+              src="./images/plus-icon.svg"
               alt="Plus Icon"
               class="profile__post-button-icon"
             />New Post
@@ -167,5 +163,8 @@
         </div>
       </div>
     </div>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>

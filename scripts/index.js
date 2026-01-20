@@ -1,33 +1,17 @@
-//Validation Import and call
-import {
-  enableValidation,
-  resetValidation,
-  config,
-} from "../scripts/validation.js";
-enableValidation(config);
-
 //----Variables----
 //Card image array
-import "./index.css";
-import badlandsImg from "../images/7-Badlands.jpg";
-import devilsTowerImg from "../images/8-Devils-Tower.jpg";
-import grottoFallsImg from "../images/9-Grotto-Falls-MT.jpg";
-import hyaliteImg from "../images/10-Hyalite.jpg";
-import naplesImg from "../images/11-Naples-FL.jpg";
-import puertoViejoImg from "../images/12-Puerto-Viejo.jpg";
-
 const initialCards = [
-  { name: "Badlands, South Dakota", link: badlandsImg },
-  { name: "Devil's Tower, Wyoming", link: devilsTowerImg },
-  { name: "Grotto Falls, Montana", link: grottoFallsImg },
+  { name: "Badlands, South Dakota", link: "images/7-Badlands.jpg" },
+  { name: "Devil's Tower, Wyoming", link: "images/8-Devils-Tower.jpg" },
+  { name: "Grotto Falls, Montana", link: "images/9-Grotto-Falls-MT.jpg" },
   {
     name: "Hyalite, Montana",
-    link: hyaliteImg,
+    link: "images/10-Hyalite.jpg",
   },
-  { name: "Naples, Florida", link: naplesImg },
+  { name: "Naples, Florida", link: "images/11-Naples-FL.jpg" },
   {
     name: "Puerto Viejo de Talamanca, Costa Rica",
-    link: puertoViejoImg,
+    link: "images/12-Puerto-Viejo.jpg",
   },
 ];
 
