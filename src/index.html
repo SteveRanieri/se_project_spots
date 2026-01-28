@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -24,11 +24,22 @@
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img
-            src="<%= require('./images/avatar.jpg') %>"
-            alt="Bessie Coleman"
-            class="profile__avatar"
-          />
+          <div class="profile__avatar-container">
+            <img
+              src="<%= require('./images/avatar.jpg') %>"
+              alt="Bessie Coleman"
+              class="profile__avatar"
+            />
+            <div class="profile__avatar-overlay">
+              <button type="button" class="profile__avatar-button">
+                <img
+                  src="<%= require('./images/pencil-icon-white.svg') %>"
+                  alt="Pencil Icon"
+                  class="profile__avatar-button-icon"
+                />Edit Avatar
+              </button>
+            </div>
+          </div>
           <div class="profile__text">
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__paragraph">Civil Aviator</p>
@@ -56,8 +67,16 @@
                 <img class="card__image" src="#" alt="" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
-                  <button type="button" class="card__delete"></button>
-                  <button type="button" class="card__like"></button>
+                  <button
+                    type="button"
+                    class="card__delete"
+                    aria-label="Delete card"
+                  ></button>
+                  <button
+                    type="button"
+                    class="card__like"
+                    aria-label="Like card"
+                  ></button>
                 </div>
               </li>
             </template>
@@ -104,7 +123,11 @@
                 ></span>
               </label>
             </fieldset>
-            <button class="modal__close-button" type="button"></button>
+            <button
+              class="modal__close-button"
+              type="button"
+              aria-label="Close"
+            ></button>
             <button
               class="modal__save-button"
               id="profile-save-button"
@@ -115,6 +138,44 @@
           </form>
         </div>
       </div>
+
+      <div class="modal" id="avatar-modal" tabindex="-1">
+        <div class="modal__container">
+          <h2 class="modal__title">Edit profile avatar</h2>
+          <form class="modal__form" novalidate>
+            <fieldset class="modal__fieldset">
+              <label for="profile-avatar-input" class="modal__label">
+                Profile Picture
+                <input
+                  type="url"
+                  class="modal__input"
+                  id="profile-avatar-input"
+                  placeholder="Paste a link to an image"
+                  required
+                  name="avatar"
+                />
+                <span
+                  class="modal__error"
+                  id="profile-avatar-input-error"
+                ></span>
+              </label>
+            </fieldset>
+            <button
+              class="modal__close-button"
+              type="button"
+              aria-label="Close"
+            ></button>
+            <button
+              class="modal__save-button"
+              id="avatar-save-button"
+              type="submit"
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+
       <div class="modal" id="new-post-modal" tabindex="-1">
         <div class="modal__container">
           <h2 class="modal__title">New post</h2>
@@ -128,6 +189,7 @@
                   id="post-image"
                   placeholder="Paste a link to the picture"
                   required
+                  name="link"
                 />
                 <span class="modal__error" id="post-image-error"></span>
               </label>
@@ -141,6 +203,7 @@
                   minlength="2"
                   maxlength="30"
                   required
+                  name="caption"
                 />
                 <span class="modal__error" id="post-caption-error"></span>
               </label>
@@ -156,6 +219,7 @@
           </form>
         </div>
       </div>
+
       <div class="modal" id="preview-modal" tabindex="-1">
         <div class="modal__image-container">
           <img class="modal__image" src="#" alt="" />
