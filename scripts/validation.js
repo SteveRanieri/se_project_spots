@@ -78,4 +78,4 @@ const enableValidation = (config) => {
   });
 };
 
-export { enableValidation, resetValidation, config };
+enableValidation(config);
