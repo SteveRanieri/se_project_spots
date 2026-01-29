@@ -25,6 +25,14 @@ This project is made so all the elements are displayed correctly on popular scre
 --Array Methods
 --DOM Manipulation
 --Validation
+-Deployment and Version Control
+--Git
+--GitHub Pages
+--npm
+-API Integration
+--REST API
+--Fetch API
+--Asynchronous programming
 -Figma
 
 **Figma**

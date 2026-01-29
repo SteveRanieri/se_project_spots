@@ -1,15 +1,11 @@
 //Validation Import and call
-import {
-  enableValidation,
-  resetValidation,
-  config,
-} from "../scripts/validation.js";
+import { enableValidation, resetValidation, config } from "./validation.js";
 enableValidation(config);
 
 //----Variables----
 //Card image array
 import "./index.css";
-import Api from "../utils/Api.js";
+import Api from "./utils/Api.js";
 
 const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
@@ -83,8 +79,6 @@ api
     profileAvatar.src = avatar;
     profileName.textContent = name;
     profileDescription.textContent = about;
-    console.log("USer Info:", userInfo);
-    console.log("Cards:", cards);
   })
   .catch(console.error);
 
