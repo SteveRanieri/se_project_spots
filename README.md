@@ -63,5 +63,5 @@ This project is made so all the elements are displayed correctly on popular scre
 Check out these videos, where I describe my project
 and some challenges I faced while building it:
 
-- [Video 1 Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing) -[Video 2 Link](https://drive.google.com/file/d/1U9LQq1fOmJmfovi-WfLcX2UdornyiJIQ/view?usp=drive_link)
+- [Video Link](https://drive.google.com/file/d/1qc-Y5zSg_WTDJ8kUcPH0teOONSGoTNLz/view?usp=sharing) -[StephenRanieri-ProjectPitch-SpotsFinalStage](https://drive.google.com/file/d/1U9LQq1fOmJmfovi-WfLcX2UdornyiJIQ/view?usp=drive_link)
 - [StephenRanieri-ProjectPitch-SpotsStage9](https://drive.google.com/file/d/17rVUEx_XcFFhJuzyXWovNSMcXoAQ6GxC/view?usp=sharing)
