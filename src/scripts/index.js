@@ -4,7 +4,7 @@ enableValidation(config);
 
 //----Variables----
 //Card image array
-import "./index.css";
+import "../pages/index.css";
 import Api from "./utils/Api.js";
 
 const api = new Api({
